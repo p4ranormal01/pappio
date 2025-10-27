@@ -64,27 +64,19 @@
         }
         
         .prototype-images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
             gap: 1.5rem;
             margin-top: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         
         .prototype-image {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
             border-radius: 8px;
-            display: block;
-            margin: 0 auto;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .image-caption {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 0.5rem;
         }
         
         footer {
@@ -104,24 +96,24 @@
 </head>
 <body>
     <header>
-        <img src="https://paranormal.s-ul.eu/UcUIxkjM" alt="Logo" class="logo">
-         <p style="font-size: 64px;">Reabilitaciniai treniruokliai</p>
+        <img src="https://paranormal.s-ul.eu/UcUIxkjM" alt="Logotipas" class="logo">
+         <p style="font-size: 96px;">Reabilitaciniai treniruokliai</p>
     </header>
     
     <div class="container">
-         <section>
+        <section>
             <h2>Apie mus</h2>
             <p>Rankos traumų liekamieji reiškiniai daugiau nebe problema su Pappio. Trijų „P“ pagalba (Pabandyk, pažaisk, pasveik), šis treniruoklis lavina riešo ir pirštų lenkiamuosius raumenis kartu su delno koordinacija.</p>
             <p>Pappio produktai gaminami moderniais, ekologiškais bei tvariais būdais naudojant 3D spausdinimo technologijas. Tai originalesnė, bei įdomesnė alternatyva nuobodiems rankų treniruokliams.</p>
         </section>
         
         <section>
-            <h2>Modelio prototipai</h2>
+            <h2>Modelis</h2>
             <p></p>
             <div class="prototype-images">
-                <img src="https://paranormal.s-ul.eu/iZUsvMxV" alt="" class="prototype-image">
-                <img src="https://paranormal.s-ul.eu/BxJJAUt0" alt="" class="prototype-image">
-                <img src="https://paranormal.s-ul.eu/KvKmXVLt" alt="" class="prototype-image">
+                <img src="https://paranormal.s-ul.eu/iZUsvMxV" class="prototype-image">
+                <img src="https://paranormal.s-ul.eu/BxJJAUt0" class="prototype-image">
+                <img src="https://paranormal.s-ul.eu/KvKmXVLt" class="prototype-image">
             </div>
         </section>
     </div>
