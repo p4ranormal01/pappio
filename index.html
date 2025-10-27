@@ -63,16 +63,28 @@
             font-size: 1.1rem;
         }
         
+        .prototype-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
         .prototype-image {
             width: 100%;
-            max-width: 800px;
+            max-width: 400px;
             height: auto;
             border-radius: 8px;
-            margin-top: 1.5rem;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
         }
         
         footer {
@@ -92,12 +104,12 @@
 </head>
 <body>
     <header>
-        <img src="https://paranormal.s-ul.eu/UcUIxkjM" alt="Logotipas" class="logo">
-        <p>Reabilitaciniai treniruokliai</p>
+        <img src="https://paranormal.s-ul.eu/UcUIxkjM" alt="Logo" class="logo">
+         <p style="font-size: 48px;">Reabilitaciniai treniruokliai</p>
     </header>
     
     <div class="container">
-        <section>
+         <section>
             <h2>Apie mus</h2>
             <p>Rankos traumų liekamieji reiškiniai daugiau nebe problema su Pappio. Trijų „P“ pagalba (Pabandyk, pažaisk, pasveik), šis treniruoklis lavina riešo ir pirštų lenkiamuosius raumenis kartu su delno koordinacija.</p>
             <p>Pappio produktai gaminami moderniais, ekologiškais bei tvariais būdais naudojant 3D spausdinimo technologijas. Tai originalesnė, bei įdomesnė alternatyva nuobodiems rankų treniruokliams.</p>
@@ -109,15 +121,12 @@
             <div class="prototype-images">
                 <div>
                     <img src="https://paranormal.s-ul.eu/iZUsvMxV" alt="Suskleistas" class="prototype-image">
-                    <p class="image-caption">Suskleistas</p>
                 </div>
                 <div>
                     <img src="https://paranormal.s-ul.eu/BxJJAUt0" alt="Atidarytas" class="prototype-image">
-                    <p class="image-caption">Atidarytas</p>
                 </div>
                 <div>
                     <img src="https://paranormal.s-ul.eu/KvKmXVLt" alt="Su gumyte" class="prototype-image">
-                    <p class="image-caption">Su gumyte atidarytas</p>
                 </div>
             </div>
         </section>
