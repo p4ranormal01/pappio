@@ -18,27 +18,25 @@
         }
         
         header {
-            background: #2c5aa0;
-            color: white;
-            padding: 1rem 2rem;
-        }
-        
-        .header-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
+            background: white;
+            color: #333;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 4px solid #2c5aa0;
         }
         
         .logo {
             max-width: 400px;
             width: 100%;
             height: auto;
+            margin-bottom: 1rem;
         }
         
-
+        header p {
+            font-size: 1.2rem;
+            color: #2c5aa0;
+            font-weight: bold;
+        }
         
         .container {
             max-width: 1000px;
@@ -51,6 +49,7 @@
             padding: 2rem;
             background: #f9f9f9;
             border-radius: 8px;
+            border-left: 4px solid #2c5aa0;
         }
         
         section h2 {
@@ -76,49 +75,6 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .service-box {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 2px solid #2c5aa0;
-        }
-        
-        .service-box h3 {
-            color: #2c5aa0;
-            margin-bottom: 0.5rem;
-        }
-        
-        .contact-info {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-top: 1rem;
-        }
-        
-        .contact-info p {
-            margin: 0.5rem 0;
-        }
-        
-        .contact-info a {
-            color: #2c5aa0;
-            text-decoration: none;
-        }
-        
-        .page {
-            display: none;
-        }
-        
-        .page.active {
-            display: block;
-        }
-        
         footer {
             background: #2c5aa0;
             color: white;
@@ -128,14 +84,6 @@
         }
         
         @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav ul li a {
-                text-align: center;
-            }
-            
             .logo {
                 max-width: 300px;
             }
@@ -144,57 +92,26 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="https://paranormal.s-ul.eu/UcUIxkjM" alt="Pappio Logo" class="logo">
-            <p style="font-size: 1.2rem;">Reabilitaciniai treniruokliai</p>
-        </div>
+        <img src="https://paranormal.s-ul.eu/UcUIxkjM" alt="Logotipas" class="logo">
+        <p>Reabilitaciniai treniruokliai</p>
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="#apie" class="nav-link active" data-page="apie">Apie mus</a></li>
-            <li><a href="#modelis" class="nav-link" data-page="modelis">Modelis</a></li>
-        </ul>
-    </nav>
-    
     <div class="container">
-        <div id="apie" class="page active">
-            <section>
-                <h2>Apie mus</h2>
-                <p>test</p>
-                <p>test</p>
-            </section>
-        </div>
+        <section>
+            <h2>Apie mus</h2>
+            <p>Rankos traumų liekamieji reiškiniai daugiau nebe problema su Pappio. Trijų „P“ pagalba (Pabandyk, pažaisk, pasveik), šis treniruoklis lavina riešo ir pirštų lenkiamuosius raumenis kartu su delno koordinacija.</p>
+            <p>Pappio produktai gaminami moderniais, ekologiškais bei tvariais būdais naudojant 3D spausdinimo technologijas. Tai originalesnė, bei įdomesnė alternatyva nuobodiems rankų treniruokliams.</p>
+        </section>
         
-        <div id="modelis" class="page">
-            <section>
-                <h2>Prototipas</h2>
-                <p></p>
-                <img src="https://paranormal.s-ul.eu/e9gspa01" alt="Pappio Prototipas" class="prototype-image">
-            </section>
-        </div>
+        <section>
+            <h2>Modelis</h2>
+            <p></p>
+            <img src="https://paranormal.s-ul.eu/e9gspa01" alt="Prototipas" class="prototype-image">
+        </section>
     </div>
     
     <footer>
         <p>&copy; 2025 Pappio. Visos teisės saugomos.</p>
     </footer>
-    
-    <script>
-        const navLinks = document.querySelectorAll('.nav-link');
-        const pages = document.querySelectorAll('.page');
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                
-                navLinks.forEach(l => l.classList.remove('active'));
-                pages.forEach(p => p.classList.remove('active'));
-                
-                link.classList.add('active');
-                const pageId = link.getAttribute('data-page');
-                document.getElementById(pageId).classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
